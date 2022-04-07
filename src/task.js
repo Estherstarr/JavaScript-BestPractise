@@ -103,7 +103,6 @@ class TaskFunctions {
     this.storage = this.storage.filter((task) => task.completed === false);
     this.resetTasks();
     localStorage.setItem('to-do-list', JSON.stringify(this.storage));
-    console.log(this.storage);
     this.showtasks();
   }
 
