@@ -92,9 +92,9 @@ class TaskFunctions {
 
   updateStatus(index) {
     if (this.storage[+index - 1].completed) {
-      this.storage[+index - 1].completed = false;
+      this.storage[index - 1].completed = false;
     } else {
-      this.storage[+index - 1].completed = true;
+      this.storage[index - 1].completed = true;
     }
     localStorage.setItem('to-do-list', JSON.stringify(this.storage));
   }
